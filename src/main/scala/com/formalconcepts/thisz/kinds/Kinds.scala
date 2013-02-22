@@ -16,5 +16,5 @@ trait Kinds {
     val kind: T => Kind
   }
   
-  def kind[T](x:T)(implicit ev:HasKind[T]) = ev.kind(x)
+  def kindOf[T](x:T)(implicit ev:HasKind[T]) = ev.kind(x)
 }
